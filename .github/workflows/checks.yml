@@ -91,7 +91,7 @@ jobs:
           conda create -n watertap-academy -c conda-forge python=3.12 watertap=1.8 jupyterlab ipywidgets
           conda activate watertap-academy
           pip install reaktoro-pse==0.4.1
-          pip install "watertap[testing,notebooks]"
+          pip install "watertap[testing]"
           echo '::endgroup::'
 
           echo '::group::Output of "idaes get-extensions" command'
